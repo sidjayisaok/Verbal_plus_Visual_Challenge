@@ -1,0 +1,139 @@
+body{
+    font-family: 'Karla', sans-serif;
+    color: #FFF;
+    background-color: #00002f;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body:before{
+     background-image: url("assets/image1.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+     content: "";
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: .15;
+}
+
+#landing1{
+    font-size: 40px;
+    margin-top: 13.75%;
+}
+
+#landing2{
+    margin-bottom: 7.9%;
+}
+
+#downArrow{
+    padding: 2.5% 6.5% 2.5% 6.5%;
+    background-color: rgba(0,0,0,0);
+    font-size: 34px;
+    border-color: transparent;
+}
+
+#bottomHalf{
+    background-color: #FFF;
+    color: #000;
+}
+
+.btn-default{
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-color: 2px #FFF;
+    padding: 2.5% 6.5% 2.5% 6.5%;
+    margin-right: 5%;
+    border-radius: 0%;
+}
+
+.btn-default:hover{
+    background-color: #FFF;
+    border-color: 2px #000;
+}
+
+#hamburger{
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: #000;
+    margin-top: 1%;
+    float: right;
+}
+
+  .affix{
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid{
+      padding-top: 70px;
+  }
+
+  .img-responsive{
+      z-index: 0;
+  }
+
+  .navbar-inverse, .navbar-nav{
+      z-index: 1;
+      height: 50px;
+      width: 100%;
+      color: #000;
+      background-color: #fff;
+      margin-bottom: 0%;
+  }
+
+  #bottomHeader{
+      margin-top: 7%;
+      margin-bottom: 5%;
+  }
+
+  #footerPart{
+      margin: 10% 0% 10% 0%;
+  }
+
+  li{
+      margin-left: 25px;
+      text-decoration: none;
+      position: fixed;
+  }
+
+  @media (min-width: 328px) and (orientation: portrait){
+      /*.navbar-inverse, .navbar-nav{
+          top: 0;
+          position: fixed;
+      }
+
+      .btn-default{
+          margin-bottom: 5%;
+      }*/
+  }
+
+  @media (min-width: 768px) and (orientation: portrait){
+      #bottomHalf.container-fluid{
+         margin-top: 57%;
+      }
+
+      .btn-default{
+          margin-right: 2.5%;
+      }
+
+      .navbar-inverse, .navbar-nav{
+          top: 0;
+          position: fixed;
+      }
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape){
+      #bottomHalf.container-fluid{
+          margin-top: 15.5%;
+      }
+
+      .navbar-inverse, .navbar-nav{
+          top: 0;
+          position: fixed;
+      }      
+  }
